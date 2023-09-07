@@ -1,7 +1,8 @@
 def minimax(gamestate, maximizingPlayer):
-    if gamestate.threeInRow() == 1:
+    result = gamestate.threeInRow()
+    if result == 1:
         return 1, None
-    elif gamestate.threeInRow() == 0b10:
+    elif result == 0b10:
         return -1, None
     elif gamestate.gameIsDrawn():
         return 0, None
@@ -24,5 +25,4 @@ def minimax(gamestate, maximizingPlayer):
             if eval < best_eval:
                 best_eval = eval
                 best_bit_move = bit_move
-
     return best_eval, best_bit_move
