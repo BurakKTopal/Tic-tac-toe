@@ -9,7 +9,6 @@ IMAGES = {}
 
 # loading the images
 def load_images():
-    IMAGES["board"] = p.transform.scale(p.image.load("Images/Tic-tac-toe-board.png"), (SQ_SIZE, SQ_SIZE))
     IMAGES["cross"] = p.transform.scale(p.image.load("Images/Tic-tac-toe-cross.png"), (SQ_SIZE, SQ_SIZE))
     IMAGES["naught"] = p.transform.scale(p.image.load("Images/Tic-tac-toe-naught.png"), (SQ_SIZE, SQ_SIZE))
     return
