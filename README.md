@@ -80,3 +80,6 @@ With this use of bits, the possible moves can be given by looking at the ensembl
         occupied_squares_bit = (self.bitboard_player2 | self.bitboard_player1)  # Occupied squares
         return [1 << i for i in range(9) if not occupied_squares_bit & (1 << i)]
 ```
+
+## Engines
+I have also added the functionality to play against an engine that plays <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerOne.py">AsPlayerOne</a> or <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerTwo.py">AsPlayerTwo</a>
