@@ -21,7 +21,7 @@ After I've recently programmed <a href="https://github.com/BurakKTopal/Chess">ch
 </p>
   <img src="\Media\bitboard-example.png" width = "50%"/>
 <p>
-  In this case, the bitboard for PlayerOne would be $110000100$ and that for PlayerTwo $001010000$. The benefit of this is the efficient and concise code: less than 40 lines of code are there necessary to cover the <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/GameLogic/RulesImplementation.py">game logic</a>!
+  In this case, the bitboard for PlayerOne would be $110000100$ and that for PlayerTwo $001010000$. The benefit of this is the efficient and concise code: less than 40 lines of code are there necessary to cover the <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/master/GameLogic/RulesImplementation.py">game logic</a>!
 </p>
 
 
@@ -83,7 +83,7 @@ With this use of bits, the possible moves can be given by looking at the ensembl
 
 ## Engines
 <p>
-  I have also added the functionality to play against an engine that plays <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerOne.py">AsPlayerOne</a> or <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerTwo.py">AsPlayerTwo</a>. These engine work on the principle of the minimax algorithm. Together with a program which counts the number of nodes of the game tree in a possible game state, the number of nodes are given. From my observations, this is around the 200k nodes/s.
+  I have also added the functionality to play against an engine that plays <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/master/Engines/EngineAsPlayerOne.py">AsPlayerOne</a> or <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/master/Engines/EngineAsPlayerTwo.py">AsPlayerTwo</a>. These engine work on the principle of the minimax algorithm. Together with a program which counts the number of nodes of the game tree in a possible game state, the number of nodes are given. From my observations, this is around the 200k nodes/s.
 </p>
 
 ## Author
