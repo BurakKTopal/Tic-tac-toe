@@ -82,4 +82,9 @@ With this use of bits, the possible moves can be given by looking at the ensembl
 ```
 
 ## Engines
-I have also added the functionality to play against an engine that plays <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerOne.py">AsPlayerOne</a> or <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerTwo.py">AsPlayerTwo</a>
+<p>
+  I have also added the functionality to play against an engine that plays <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerOne.py">AsPlayerOne</a> or <a href="https://github.com/BurakKTopal/Tic-tac-toe/blob/main/Engines/EngineAsPlayerTwo.py">AsPlayerTwo</a>. These engine work on the principle of the minimax algorithm. Together with a program which counts the number of nodes of the game tree in a possible game state, the number of nodes are given. From my observations, this is around the 200k nodes/s.
+</p>
+
+## Author
+<footer>Burak Kucuktopal</footer>
