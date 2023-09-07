@@ -23,7 +23,6 @@ def main():
     running = True
     player1 = True
     player2 = False
-    # menu to ask what the persons wants to do: BOT(white, black) or multiplayer
     drawGameState(screen)
     while running:
 
@@ -68,7 +67,7 @@ def main():
 
 def drawGameState(screen):
     """
-    Drawing current chess board
+    Drawing current board
     """
     drawBoard(screen)
 
@@ -81,7 +80,7 @@ def drawBoard(screen):
         for col in range(DIMENSION):
             square = p.Rect(col * SQ_SIZE, row * SQ_SIZE, SQ_SIZE, SQ_SIZE)
             p.draw.rect(screen, 'white', square)
-            border_width = 2
+            border_width = 1
             p.draw.rect(screen, "black", square, border_width)
     return
 
