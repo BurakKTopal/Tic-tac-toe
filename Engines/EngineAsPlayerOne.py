@@ -23,10 +23,8 @@ def main():
     running = True
     player1 = True
     player2 = False
-    # menu to ask what the persons wants to do: BOT(white, black) or multiplayer
     drawGameState(screen)
     while running:
-
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
@@ -39,6 +37,7 @@ def main():
                 input("Draw!")
                 running = False
                 break
+
             elif player1:
                 start = time.perf_counter()
                 eval, best_bit_move = minimax(gs, True)
@@ -47,7 +46,7 @@ def main():
                 print("Time to make a move:", end-start)
                 gs.bitboard_player1 |= best_bit_move  # Updating the board
 
-                col, row = bit_to_co[best_bit_move]
+                col, row = bit_to_co[best_bit_move] # Converting bit move to coordinate
                 drawCross(screen, col, row)
 
                 player1, player2 = False, True
@@ -82,7 +81,7 @@ def drawBoard(screen):
         for col in range(DIMENSION):
             square = p.Rect(col * SQ_SIZE, row * SQ_SIZE, SQ_SIZE, SQ_SIZE)
             p.draw.rect(screen, 'white', square)
-            border_width = 2
+            border_width = 1
             p.draw.rect(screen, "black", square, border_width)
     return
 
