@@ -17,7 +17,7 @@ pip install time pygame
 
 ### Concept of bitboard
 <p>
-After I've recently programmed <a href="">chess</a>, I wanted to apply a concept to Tic-tac-toe which I came accros while coding; bitboards. Bitboards are essentially n-bit values representing the current board, depending on the board. For Tic-tac-toe, I've used two 9-bit values for describing the state of PlayerOne(crosses) and the state of PlayerTwo(naughts). 1 represents that the square is occupied, 0 that it's empty. As an example, consider following state:
+After I've recently programmed <a href="https://github.com/BurakKTopal/Chess">chess</a>, I wanted to apply a concept to Tic-tac-toe which I came accros while coding; bitboards. Bitboards are essentially n-bit values representing the current board, depending on the board. For Tic-tac-toe, I've used two 9-bit values for describing the state of PlayerOne(crosses) and the state of PlayerTwo(naughts). 1 represents that the square is occupied, 0 that it's empty. As an example, consider following state:
 </p>
   <img src="\Media\bitboard-example.png", width = "50%"/>
 <p>
