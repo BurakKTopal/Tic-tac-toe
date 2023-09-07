@@ -52,7 +52,7 @@ Checking if one of the players have won, we can map the current bitboards to the
 <li>$100010001$ for diagonally from left upper corner, to right down corner</li>
 <li>$001010100$ for diagonally from right upper corner, to left down corner</li>
 </ul>
-With this, we can AND the current bitboards of the players with the possible configurations, if one of the operations would give back the possible configuration, then the game ends(:returns 1 or 0b10):
+With this, we can AND the current bitboards of the players with the possible configurations, if one of the operations would give back the possible configuration, then the game ends:
 
 ```
   def threeInRow(self):
