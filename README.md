@@ -63,3 +63,20 @@ With this, we can AND the current bitboards of the players with the possible con
               return 0b10  # Player two wins
       return 0
 ```
+
+With all of this, checking for a draw is pretty straightforward:
+
+```
+    def gameIsDrawn(self):
+        if self.bitboard_player1 | self.bitboard_player2 == 0b111111111:
+            return 1
+        return 0
+```
+
+With this use of bits, the possible moves can be given by looking at the ensemble of the bitboards and check which squares are empty by looking for a zero:
+
+```
+    def possibleMoves(self):
+        occupied_squares_bit = (self.bitboard_player2 | self.bitboard_player1)  # Occupied squares
+        return [1 << i for i in range(9) if not occupied_squares_bit & (1 << i)]
+```
