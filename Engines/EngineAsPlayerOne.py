@@ -1,4 +1,5 @@
 import time
+from Algorithm.CountingPositions import CountingPositions
 from Main import *
 from Algorithm.Minimax import *
 # defining the window
@@ -42,8 +43,11 @@ def main():
                 start = time.perf_counter()
                 eval, best_bit_move = minimax(gs, True)
                 end = time.perf_counter()
+                nodes = CountingPositions(gs, True)
                 print("---------------------------")
-                print("Time to make a move:", end-start)
+                print("nodes: ", nodes)
+                print("Time to make a move: ", end-start)
+                print("Nodes/s: ", nodes/(end-start))
                 gs.bitboard_player1 |= best_bit_move  # Updating the board
 
                 col, row = bit_to_co[best_bit_move] # Converting bit move to coordinate
