@@ -29,7 +29,7 @@ After I've recently programmed <a href="">chess</a>, I wanted to apply a concept
 Updating the bitboards can be done by bit manipulations. Suppose that in the last positions, PlayerTwo plays between the two crosses. This move is happened on the square with index '3', counting from left->right, up->down, can be represented by a bit shift: 
 
   ```
-move_bit = 1<<3  # Making move
+move_bit = 1<<3  # Defining move in bit-format
   ```
 Consequently, the bitboard of PlayerTwo can be updated with the OR operator:
 
